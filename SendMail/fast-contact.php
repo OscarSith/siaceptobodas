@@ -2,7 +2,7 @@
 session_start();
 if (!$_POST) exit;
 
-require 'SendMail/PHPMailerAutoload.php';
+require 'PHPMailerAutoload.php';
 
 // Email address verification, do not edit.
 function isEmail($email) {
@@ -40,6 +40,7 @@ if (trim($name) == '') {
 		$mail->SMTPSecure = 'tls';
 		$mail->CharSet = 'UTF-8';
 		$mail->Port = 587;
+		$mail->isHTML(true);
 
 		$mail->From     = 'root@siaceptobodas.com';
 		$mail->FromName = 'Si Acepto';
@@ -48,13 +49,8 @@ if (trim($name) == '') {
 				.'<ul><li><strong>Correo electrónico:</strong> '.$email.'</li>'
 				.'<li><strong>Mensaje</strong><blockquote>'. nl2br($message) .'</blockquote></li></ul>';
 
-		$text_body = 'De: '.$name."\n\n"
-				.'Correo electrónico: '.$email."\n"
-				."Mensaje\n". $message;
-
 		$mail->Subject = 'Siaceptobodas :: Servicios';
 		$mail->Body    = $body;
-		$mail->AltBody = $text_body;
 		$mail->addAddress('diego@siaceptobodas.com', 'Diego');
 		$mail->addAddress('gerardo@siaceptobodas.com', 'Gerardo');
 

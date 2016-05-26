@@ -4,6 +4,16 @@
 	<h1 class="page-header">COTIZACIÓN</h1>
 	<div class="col-lg-10 col-lg-offset-1">
 		<form class="form-horizontal" method="post" action="SendMail/send-cotizacion.php">
+			<div class="form-group" id="content-messages">
+				<?php if (isset($_SESSION['SUCCESS'])): ?>
+					<div id="success" class="alert alert-success" role="alert"><?= $_SESSION['SUCCESS'] ?></div>
+					<?php unset($_SESSION['SUCCESS']) ?>
+				<?php endif ?>
+				<?php if (isset($_SESSION['ERROR'])): ?>
+					<div id="error" class="alert alert-danger" role="alert"><?php echo $_SESSION['ERROR'] ?></div>
+					<?php unset($_SESSION['ERROR']) ?>
+				<?php endif ?>
+			</div>
 			<div class="bloque">
 				<h3>INFORMACIÓN PERSONAL</h3>
 				<div class="form-group">
@@ -57,10 +67,10 @@
 					<label for="" class="control-label col-sm-3">LOCACIÓN</label>
 					<div class="col-sm-9">
 						<div class="radio">
-							<label for="si_tengo"><input type="radio" id="si_tengo" name="locacion"> SI TENGO</label>
+							<label for="si_tengo"><input type="radio" id="si_tengo" name="locacion" value="SI TENGO"> SI TENGO</label>
 						</div>
 						<div class="radio">
-							<label for="no_tengo"><input type="radio" id="no_tengo" name="locacion"> NO TENGO</label>
+							<label for="no_tengo"><input type="radio" id="no_tengo" name="locacion" value="NO TENGO"> NO TENGO</label>
 						</div>
 					</div>
 				</div>

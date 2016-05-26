@@ -40,6 +40,7 @@ if (trim($name) == '') {
 		$mail->SMTPSecure = 'tls';
 		$mail->CharSet = 'UTF-8';
 		$mail->Port = 587;
+		$mail->isHTML(true);
 
 		$mail->From     = 'root@siaceptobodas.com';
 		$mail->FromName = 'Si Acepto';
@@ -49,14 +50,8 @@ if (trim($name) == '') {
 				.'<li><strong>TELÉFONO:</strong> '.$phone.'</li>'
 				.'<li><strong>MENSAJE</strong><blockquote>'. nl2br($message) .'</blockquote></li></ul>';
 
-		$text_body = 'De: '.$name."\n\n"
-				.'Correo electrónico: '.$email."\n"
-				.'Teléfono: '.$phone."\n"
-				."Mensaje\n". $message;
-
 		$mail->Subject = 'Siaceptobodas :: Contacto';
 		$mail->Body    = $body;
-		$mail->AltBody = $text_body;
 		$mail->addAddress('diego@siaceptobodas.com', 'Diego');
 		$mail->addAddress('gerardo@siaceptobodas.com', 'Gerardo');
 

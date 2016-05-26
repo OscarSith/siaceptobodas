@@ -2,7 +2,7 @@
 session_start();
 if (!$_POST) exit;
 
-require 'SendMail/PHPMailerAutoload.php';
+require 'PHPMailerAutoload.php';
 
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
@@ -45,6 +45,7 @@ if (trim($params['nombres']) == '') {
 		$mail->SMTPSecure = 'tls';
 		$mail->CharSet = 'UTF-8';
 		$mail->Port = 587;
+		$mail->isHTML(true);
 
 		$mail->From     = 'root@siaceptobodas.com';
 		$mail->FromName = 'Si Acepto';
