@@ -15,6 +15,7 @@ $path = array_pop($path);
 
 	<link rel="shortcut icon" type="image/ico" href="favicon.ico">
 	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-datepicker3.min.css" rel="stylesheet">
 	<link href="assets/css/main.css" rel="stylesheet">
 	<link href="assets/css/animate.css" rel="stylesheet">
 </head>

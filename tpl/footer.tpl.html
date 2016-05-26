@@ -40,8 +40,17 @@
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="assets/js/wow.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap-datepicker.min.js"></script>
 	<script>
 		new WOW().init();
+
+		$('#posible_fecha').datepicker({
+			format: "dd-mm-yyyy",
+			startView: 2,
+			language: "es",
+			autoclose: true
+		});
+
 		var $map = $('#map');
 		if ($map.length) {
 			(function ( $ ) {

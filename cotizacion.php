@@ -77,7 +77,7 @@
 				<div class="form-group">
 					<label for="" class="control-label col-sm-3">POSIBLE FECHA</label>
 					<div class="col-sm-3 has-feedback">
-						<input type="text" class="form-control" name="posible_fecha">
+						<input type="text" class="form-control" name="posible_fecha" id="posible_fecha">
 						<div class="form-control-feedback"><i class="fa fa-calendar"></i></div>
 					</div>
 					<label for="" class="control-label col-sm-3">NRO. INVITADOS</label>
