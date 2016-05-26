@@ -58,7 +58,7 @@ if (trim($params['nombres']) == '') {
 				.'<li><strong>Posible Fecha: </strong>'. $params['posible_fecha'] .'</li>'
 				.'<li><strong>Nro. Invitados: </strong>'. $params['nro_invitados'] .'</li></ul>';
 
-		$mail->Subject = 'Siaceptobodas :: Servicios';
+		$mail->Subject = 'Siaceptobodas :: Cotización';
 		$mail->Body    = $body;
 		$mail->addAddress('diego@siaceptobodas.com', 'Diego');
 		$mail->addAddress('gerardo@siaceptobodas.com', 'Gerardo');
