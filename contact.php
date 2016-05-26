@@ -14,8 +14,6 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 $name     = $_POST['nombre'];
 $email    = $_POST['email'];
 $phone    = $_POST['telefono'];
-$empresa    = $_POST['empresa'];
-$tipo    = $_POST['tipo'];
 $message = $_POST['mensaje'];
 
 if (trim($name) == '') {
@@ -37,33 +35,30 @@ if (trim($name) == '') {
 		$mail->isSMTP();
 		$mail->SMTPAuth = true;
 		$mail->Host = 'smtp.zoho.com';
-		$mail->Username = 'root@synergyeventos.com';
+		$mail->Username = 'root@siaceptobodas.com';
 		$mail->Password = '';
 		$mail->SMTPSecure = 'tls';
 		$mail->CharSet = 'UTF-8';
 		$mail->Port = 587;
 
-		$mail->From     = 'root@synergyeventos.com';
-		$mail->FromName = 'Synergy Perú';
+		$mail->From     = 'root@siaceptobodas.com';
+		$mail->FromName = 'Si Acepto';
 
 		$body = '<h2>De: '.$name.'</h2>'
 				.'<ul><li><strong>CORREO ELECTRÓNICO:</strong> '.$email.'</li>'
 				.'<li><strong>TELÉFONO:</strong> '.$phone.'</li>'
-				.'<li><strong>COLEGIO:</strong> '.$empresa.'</li>'
-				.'<li><strong>TIPO:</strong> '.$tipo.'</li>'
 				.'<li><strong>MENSAJE</strong><blockquote>'. nl2br($message) .'</blockquote></li></ul>';
 
 		$text_body = 'De: '.$name."\n\n"
 				.'Correo electrónico: '.$email."\n"
 				.'Teléfono: '.$phone."\n"
-				.'Colegio: '.$empresa."\n"
-				.'Tipo: '.$tipo."\n"
 				."Mensaje\n". $message;
 
-		$mail->Subject = 'Synergy :: Página contacto';
+		$mail->Subject = 'Siaceptobodas :: Contacto';
 		$mail->Body    = $body;
 		$mail->AltBody = $text_body;
-		$mail->addAddress('info@synergyeventos.com', 'Synergy Eventos');
+		$mail->addAddress('diego@siaceptobodas.com', 'Diego');
+		$mail->addAddress('gerardo@siaceptobodas.com', 'Gerardo');
 
 	    if ($mail->send())
 		{

@@ -35,14 +35,14 @@ if (trim($name) == '') {
 		$mail->isSMTP();
 		$mail->SMTPAuth = true;
 		$mail->Host = 'smtp.zoho.com';
-		$mail->Username = 'root@synergyeventos.com';
+		$mail->Username = 'root@siaceptobodas.com';
 		$mail->Password = '';
 		$mail->SMTPSecure = 'tls';
 		$mail->CharSet = 'UTF-8';
 		$mail->Port = 587;
 
-		$mail->From     = 'root@synergyeventos.com';
-		$mail->FromName = 'Agencia Dangi';
+		$mail->From     = 'root@siaceptobodas.com';
+		$mail->FromName = 'Si Acepto';
 
 		$body = '<h2>De: '.$name.'</h2>'
 				.'<ul><li><strong>Correo electrónico:</strong> '.$email.'</li>'
@@ -52,10 +52,11 @@ if (trim($name) == '') {
 				.'Correo electrónico: '.$email."\n"
 				."Mensaje\n". $message;
 
-		$mail->Subject = 'Synergy :: Página contacto ' . $page;
+		$mail->Subject = 'Siaceptobodas :: Servicios';
 		$mail->Body    = $body;
 		$mail->AltBody = $text_body;
-		$mail->addAddress('info@synergyeventos.com', 'Synergy Eventos');
+		$mail->addAddress('diego@siaceptobodas.com', 'Diego');
+		$mail->addAddress('gerardo@siaceptobodas.com', 'Gerardo');
 
 	    if ($mail->send())
 		{

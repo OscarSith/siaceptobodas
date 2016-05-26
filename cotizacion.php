@@ -3,17 +3,17 @@
 <section class="container">
 	<h1 class="page-header">COTIZACIÓN</h1>
 	<div class="col-lg-10 col-lg-offset-1">
-		<form class="form-horizontal" method="post" action="#">
+		<form class="form-horizontal" method="post" action="SendMail/send-cotizacion.php">
 			<div class="bloque">
 				<h3>INFORMACIÓN PERSONAL</h3>
 				<div class="form-group">
 					<label for="" class="control-label col-sm-3">NOMBRES Y APELLIDOS</label>
-					<div class="col-sm-9"><input type="text" class="form-control" name="nombres"></div>
+					<div class="col-sm-9"><input type="text" class="form-control" name="nombres" required></div>
 				</div>
 				<div class="form-group">
 					<label for="" class="control-label col-sm-3">CORREO</label>
 					<div class="col-sm-4 has-feedback">
-						<input type="email" class="form-control" name="correo">
+						<input type="email" class="form-control" name="correo" required>
 						<div class="form-control-feedback"><i class="fa fa-envelope"></i></div>
 					</div>
 					<label for="" class="control-label col-sm-2">TEL./CEL.</label>
