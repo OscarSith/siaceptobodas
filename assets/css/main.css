@@ -281,9 +281,39 @@ footer {
     border-bottom: 1px solid #ccc;
     margin-bottom: 36px;
 }
+.fix-feedback {
+    right: 13px !important
+}
 @media (min-width: 992px) {
     .col-md-15 {
         width: 20%;
         float: left;
+    }
+}
+@media (max-width: 767px) {
+    .nav-socials {
+        margin-top: 0
+    }
+    .navbar-toggle {
+        font-size: 1.7em;
+        position: absolute;
+        right: 0;
+        top: -114px;
+    }
+    .nav-pills a {
+        padding-top: 10px !important
+    }
+    .nav-socials {
+        text-align: center;
+        border-top: 1px solid #ccc;
+        padding-top: 10px;
+    }
+    .nav-socials li {
+        float: none;
+        display: inline-block;
+    }
+    .logo-footer{
+        display: inline-block;
+        margin-bottom: 15px;
     }
 }

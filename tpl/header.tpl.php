@@ -29,16 +29,22 @@ $path = array_pop($path);
 					</a>
 				</div>
 				<div class="col-sm-7 no-padding">
-					<nav>
-						<ul class="nav nav-pills nav-justified">
-							<li><a href="index.php" class="<?= ($path == 'index.php' || $path == '') ? 'active-nav' : '' ?>">INICIO</a></li>
-							<li><a href="nosotros.php" class="<?= ($path == 'nosotros.php' || $path == '') ? 'active-nav' : '' ?>">NOSOTROS</a></li>
-							<li><a href="servicios.php" class="<?= ($path == 'servicios.php') ? 'active-nav' : '' ?>">SERVICIOS</a></li>
-							<!-- <li><a href="testimonio.php" class="<?= ($path == 'testimonio.php') ? 'active-nav' : '' ?>">TESTIMONIOS</a></li> -->
-							<li><a href="cotizacion.php" class="<?= ($path == 'cotizacion.php') ? 'active-nav' : '' ?>">COTIZACIÓN</a></li>
-							<li><a href="contacto.php" class="<?= ($path == 'contacto.php') ? 'active-nav' : '' ?>">CONTACTO</a></li>
-						</ul>
-					</nav>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+						<span class="sr-only">Toggle Navigation</span>
+						<i class="fa fa-bars"></i>
+					</button>
+					<div id="main-nav" class="navbar-collapse collapse navbar-mega-menu">
+						<nav class="nav navbar-nav navbar-right">
+							<ul class="nav nav-pills nav-justified">
+								<li><a href="index.php" class="<?= ($path == 'index.php' || $path == '') ? 'active-nav' : '' ?>">INICIO</a></li>
+								<li><a href="nosotros.php" class="<?= ($path == 'nosotros.php' || $path == '') ? 'active-nav' : '' ?>">NOSOTROS</a></li>
+								<li><a href="servicios.php" class="<?= ($path == 'servicios.php') ? 'active-nav' : '' ?>">SERVICIOS</a></li>
+								<!-- <li><a href="testimonio.php" class="<?= ($path == 'testimonio.php') ? 'active-nav' : '' ?>">TESTIMONIOS</a></li> -->
+								<li><a href="cotizacion.php" class="<?= ($path == 'cotizacion.php') ? 'active-nav' : '' ?>">COTIZACIÓN</a></li>
+								<li><a href="contacto.php" class="<?= ($path == 'contacto.php') ? 'active-nav' : '' ?>">CONTACTO</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 				<div class="col-sm-2">
 					<ul class="list-unstyled nav-socials">

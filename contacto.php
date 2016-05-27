@@ -35,9 +35,9 @@
 					</div>
 					<div class="form-group has-feedback">
 						<div class="row">
-							<div class="col-sm-6 col-md-4 pright-0">
+							<div class="col-sm-6 col-md-4">
 								<input type="text" name="telefono" placeholder="Teléfono" class="form-control">
-								<div class="form-control-feedback"><i class="fa fa-phone"></i></div>
+								<div class="form-control-feedback fix-feedback"><i class="fa fa-phone"></i></div>
 							</div>
 						</div>
 					</div>
