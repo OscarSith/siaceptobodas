@@ -60,8 +60,8 @@ if (trim($params['nombres']) == '') {
 
 		$mail->Subject = 'Siaceptobodas :: Cotización';
 		$mail->Body    = $body;
-		$mail->addAddress('diego@siaceptobodas.com', 'Diego');
-		$mail->addAddress('gerardo@siaceptobodas.com', 'Gerardo');
+		$mail->addAddress('eventos@siaceptobodas.com', 'Eventos');
+		$mail->addAddress('eventos@nosilenceperu.com', 'Eventos');
 
 	    if ($mail->send())
 		{
