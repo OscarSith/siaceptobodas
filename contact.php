@@ -52,8 +52,8 @@ if (trim($name) == '') {
 
 		$mail->Subject = 'Siaceptobodas :: Contacto';
 		$mail->Body    = $body;
-		$mail->addAddress('diego@siaceptobodas.com', 'Diego');
-		$mail->addAddress('gerardo@siaceptobodas.com', 'Gerardo');
+		$mail->addAddress('eventos@siaceptobodas.com', 'Eventos');
+		//$mail->addAddress('gerardo@siaceptobodas.com', 'Gerardo');
 
 	    if ($mail->send())
 		{

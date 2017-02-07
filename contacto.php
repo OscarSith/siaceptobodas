@@ -58,7 +58,7 @@
 				<ul class="icons-list list-unstyled">
 					<li><strong><i class="fa fa-phone fa-lg fa-fw"></i> Central:</strong> 708 4101</li>
 	                <li><strong><i class="fa fa-mobile-phone fa-lg fa-fw"></i> RPC:</strong> 992346162</li>
-	                <li><strong><i class="fa fa-envelope-o fa-lg fa-fw"></i> Correo:</strong> <a href="mailito:eventos@nosilenceperu.com">eventos@nosilenceperu.com</a></li>
+	                <li><strong><i class="fa fa-envelope-o fa-lg fa-fw"></i> Correo:</strong> <a href="mailito:eventos@siaceptobodas.com">eventos@siaceptobodas.com</a></li>
 				</ul>
 				<div class="hr1" style="margin-bottom:15px;"></div>
 			</div>
